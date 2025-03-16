@@ -95,7 +95,7 @@ impl CpuInfoIfce for CpuInfo {
         match vaddr_range {
             0b0000 => 48, // 48-bit VA
             0b0001 => 52, // 52-bit VA when using the 64KB granule
-            0b0010 => 56, // 52-bit VA only when FEAT_D128 is implemented
+            0b0010 => 56, // 56-bit VA only when FEAT_D128 is implemented
             _ => panic!("aarch64 systeminfo: Unrecognized virtual address range value!"),
         }
     }

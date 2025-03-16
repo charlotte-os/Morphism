@@ -1,5 +1,5 @@
 #![no_std]
-#![no_main]
+#![no_main] // Our main is conforms to the Limine Boot Protocol but is not what the Rust compiler expects
 #![feature(sync_unsafe_cell)]
 #![feature(step_trait)]
 
